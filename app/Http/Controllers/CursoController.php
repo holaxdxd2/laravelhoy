@@ -9,7 +9,7 @@ class CursoController extends Controller
     public function hola($num1, $num2)
     {
        return $num1 + $num2;
-
+                
     }
 
 }

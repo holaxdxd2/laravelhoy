@@ -1,7 +1,7 @@
 <?php
 use App\Http\Controllers\CursoController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TallerController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/curso/{dato1}/{dato2}',[CursoController::class,'hola'])->name('curso.show');
+Route::get('/primo/{numero}', [TallerController::class, 'esPrimo'])->name('curso.esPrimo');
