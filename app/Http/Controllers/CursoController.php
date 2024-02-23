@@ -6,10 +6,22 @@ use Illuminate\Http\Request;
 class CursoController extends Controller
 {
 
-    public function hola($num1, $num2)
-    {
-       return $num1 + $num2;
-                
-    }
+
+public function create(){
+
+
+    return view('formulario');
+
+ }
+
+ public function store(Request $request){
+
+    return $request->num1;
+
+
+ }
+
+ //primos
+
 
 }
